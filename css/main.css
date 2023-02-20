@@ -1,0 +1,362 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos generales*/
+/*estilos body*/
+body {
+  background-color: antiquewhite; }
+
+/*estilos para el menu de navegacion*/
+.menu {
+  background-color: lightcoral;
+  border: solid black 3px;
+  margin: 0.2rem; }
+
+.foto-logo {
+  width: 3rem; }
+
+/*estilos para el boton del menu*/
+.navbar-toggler {
+  border: none !important; }
+
+.navbar-toggler:focus {
+  box-shadow: none !important; }
+
+/* estilos de footer*/
+footer {
+  background-color: rgba(238, 195, 158, 0.801);
+  display: flex;
+  justify-content: center;
+  /*alinea a los hijos horizontal*/
+  align-items: center;
+  /*alinea a los hijos vertical*/ }
+  footer .redes-sociales {
+    display: none; }
+
+/*media queries generales*/
+@media screen and (min-width: 1024px) {
+  /*estilos de menu*/
+  .menu {
+    display: flex;
+    justify-content: center; }
+  .collapse {
+    font-weight: bolder !important; }
+  .nav-item:hover {
+    transform: scale(0.9) !important;
+    font-weight: lighter !important; }
+  /*estilos de footer*/
+  footer {
+    height: 80px; }
+    footer .redes-sociales {
+      display: flex;
+      align-items: center;
+      /*alinea a los hijos vertical*/
+      flex-wrap: wrap;
+      margin: 1rem; }
+      footer .redes-sociales a img {
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 1rem; }
+      footer .redes-sociales :hover {
+        filter: drop-shadow(0 0 5px #4d422b); } }
+
+/* fin de estilos generales*/
+/* estilos index.html*/
+.contenedor-uno {
+  height: 80%;
+  width: 100%; }
+
+.img-portada {
+  height: 80%;
+  width: 100%; }
+
+.titulo-uno {
+  text-align: center;
+  color: whitesmoke;
+  background-color: brown;
+  font-size: 50px;
+  font-style: oblique;
+  margin: 0.2rem;
+  border: solid black 5px; }
+
+/*etilos de main */
+.main-uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .main-uno img {
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem; }
+  .main-uno p {
+    margin: 1rem;
+    padding: 1rem; }
+
+/*media querie index.html*/
+@media screen and (min-width: 1024px) {
+  /* estilos del index*/
+  .main-uno {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img h2" "img p";
+    margin-bottom: 1rem; }
+    .main-uno img {
+      grid-area: img;
+      object-fit: cover; }
+    .main-uno h2 {
+      grid-area: h2;
+      margin-top: 10px; }
+    .main-uno p {
+      grid-area: p;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 14px; } }
+
+/*fin de estilos index.html*/
+/*estilos alquileres.html*/
+/* estilos de main*/
+.alquileres {
+  padding: 0.2rem; }
+
+.galeria-img {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(222, 126, 72, 0.989071) 51%, #f96613 73%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center; }
+
+.img-size {
+  width: 80%;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  object-fit: cover;
+  /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/ }
+
+.galeria-item {
+  position: relative; }
+  .galeria-item p {
+    font-size: 15px; }
+
+.titulo-imagen {
+  text-decoration: none !important;
+  position: absolute;
+  left: 55px;
+  bottom: 55px;
+  font-size: 15px;
+  color: #fdfdfd !important; }
+
+/* estilos para pantallas de tablet*/
+@media screen and (min-width: 768px) {
+  /*estilos para alquileres*/
+  .alquileres {
+    padding: 0.2rem; }
+  .galeria-img {
+    width: 100% !important;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid black 2px; }
+  .galeria-item {
+    position: relative; }
+    .galeria-item p {
+      font-size: 17px; }
+  .img-size {
+    width: 390px !important;
+    height: 399px; }
+  .titulo-imagen {
+    position: absolute;
+    left: 25px;
+    bottom: 55px;
+    font-size: 17px; }
+  /*.galeria-item p{
+        font-size: 17px;
+    }*/ }
+
+/*media querie alquileres.html*/
+@media screen and (min-width: 1024px) {
+  .alquileres {
+    padding: 0.2rem; }
+  .galeria-img {
+    width: 100% !important;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid black 3px; }
+  .galeria-item {
+    position: relative; }
+  .img-size {
+    width: 479px !important;
+    height: 399px; }
+  .titulo-imagen {
+    position: absolute;
+    left: 25px;
+    bottom: 55px; } }
+
+/*fin de estilos alquileres.html*/
+/*estilos propiedad-uno.html*/
+.galeria-dos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center; }
+
+.img-depto {
+  width: 95%;
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 0.2rem; }
+
+.alquilertexto {
+  width: 100%; }
+  .alquilertexto h2 {
+    margin-top: 0.5rem;
+    text-align: center; }
+  .alquilertexto p {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e7ebee;
+    font-size: 15px; }
+    .alquilertexto p span {
+      display: block;
+      text-align: left;
+      padding-top: 10px; }
+
+.locatario {
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold; }
+
+.alquilertextodos h3, .alquilertextodos h4 {
+  text-align: center; }
+
+.alquilertextodos p {
+  margin: .5rem 1rem 1rem 1rem;
+  text-align: center; }
+  .alquilertextodos p span {
+    display: block;
+    padding-top: 10px; }
+
+.alquilertextodos iframe {
+  margin: 0 0 0.5rem 0.5rem;
+  width: 95%;
+  height: 300px; }
+
+/* estilos para pantallas de tablet*/
+@media screen and (min-width: 768px) {
+  .galeria-dos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 0.5rem; }
+  .imagen-uno {
+    grid-column-start: span 2;
+    width: 100%; }
+  .imagen-dos {
+    width: 95%; }
+  .imagen-cuatro {
+    grid-column-start: span 2;
+    width: 100%; }
+  .informacion {
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: "alquilertexto alquilertextodos";
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem 1rem 1rem; }
+  .alquilertexto {
+    grid-area: alquilertexto; }
+    .alquilertexto p {
+      font-size: 16px; }
+    .alquilertexto h2 {
+      text-align: center; }
+  .alquilertextodos {
+    grid-area: alquilertextodos;
+    text-align: center; }
+    .alquilertextodos h3 {
+      margin-top: 0.6rem; }
+    .alquilertextodos iframe {
+      height: 59%; } }
+
+/* fin de estilos para pantallas de tablets*/
+/*media querie para pantallas de escritorio*/
+@media screen and (min-width: 1024px) {
+  .galeria-dos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr); }
+  .imagen-uno {
+    grid-column-start: span 1;
+    width: 100%; }
+  .imagen-cuatro {
+    grid-column-start: span 1;
+    width: 100%; }
+  .imagen-dos {
+    width: 99%;
+    height: 99%;
+    object-fit: cover; }
+  .alquilertextodos iframe {
+    height: 53%; } }
+
+/*fin de estilos propiedad-uno.html*/
+/*estilos contacto.html*/
+.maincontacto {
+  text-align: center;
+  padding-top: 10px;
+  background-color: whitesmoke;
+  margin: 15px 10px 10px 10px;
+  font-size: 15px; }
+
+.maincontacto h2 {
+  background-color: #c4c0c0;
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  margin: 30px 0px 50px 50px; }
+
+/*fin de estilos contacto.html*/
+/*estilos sobrenosotros.html*/
+.main-nosotros {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center; }
+  .main-nosotros img {
+    height: 100%;
+    margin: 1rem;
+    padding: 1rem; }
+  .main-nosotros p {
+    text-align: center;
+    margin: 0.5rem; }
+  .main-nosotros h2 {
+    text-align: center; }
+
+/*fin de estilos sobrenosotros.html*/

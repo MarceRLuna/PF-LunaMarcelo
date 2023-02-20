@@ -1,0 +1,25 @@
+
+//mixin flex sin parametros
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+
+@mixin flex-column-dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+//mixin grid sin parametros
+
+@mixin grid{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}

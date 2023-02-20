@@ -1,0 +1,102 @@
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//importar variables
+@import "utilidades/variables";
+
+/*estilos generales*/
+
+/*estilos body*/
+body{
+    background-color: antiquewhite;
+    
+ }
+
+ /*estilos para el menu de navegacion*/
+.menu{
+   
+    background-color: lightcoral;
+    border: solid black 3px;
+    margin: 0.2rem;
+}
+.foto-logo{
+    width: 3rem;
+}   
+
+/*estilos para el boton del menu*/
+.navbar-toggler{
+    border: none !important; 
+    
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+/* estilos de footer*/
+footer{
+    background-color: $color-footer;
+    display: flex;
+    justify-content: center; /*alinea a los hijos horizontal*/
+    align-items: center; /*alinea a los hijos vertical*/
+    .redes-sociales{
+        display: none;
+    }
+}
+
+
+/*media queries generales*/
+@media screen and (min-width: 1024px){
+    
+    /*estilos de menu*/
+    .menu{
+        display: flex;
+        justify-content: center; 
+    }
+    .collapse{
+        font-weight: bolder !important;
+        
+    }
+    .nav-item{
+        &:hover{
+            transform: scale(0.9) !important;
+            font-weight:lighter !important;
+            }
+    }
+
+    /*estilos de footer*/
+    footer{
+        height: 80px;
+        .redes-sociales{
+            display: flex;
+            align-items: center; /*alinea a los hijos vertical*/
+            flex-wrap: wrap;
+            margin: 1rem;
+            a{
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    margin: 1rem;
+                    
+                }
+            }
+            :hover{
+                filter: drop-shadow(0 0 5px rgb(77, 66, 43));
+            }
+        }
+    }
+}
+/* fin de estilos generales*/
+
+ @import "secciones/index";
+ @import "secciones/alquileres";
+ @import "secciones/propiedad-uno";
+ @import "secciones/contacto";
+ @import "secciones/sobrenosotros";
+ 

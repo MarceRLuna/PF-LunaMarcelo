@@ -38,6 +38,13 @@
     p{
         margin: 1rem;
         padding: 1rem;
+        text-align:justify;
+        span{
+            display:block;
+        }
+        .span-text{
+            margin-top: 10px;
+        }
     }    
 }    
 
@@ -68,8 +75,14 @@
             grid-area: p;
             margin: 0.5rem;
             padding: 0.5rem;
-            text-align: center;
+            text-align:justify;
             font-size: 14px;
+            span{
+                display:block;
+            }
+            .span-text{
+                margin-top: 10px;
+            }
         }
     }
 }

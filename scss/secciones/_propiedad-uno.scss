@@ -1,13 +1,13 @@
 
+//import variables, mixin
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
 /*estilos propiedad-uno.html*/
 
 .galeria-dos{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
+    width: $ancho;
+    @include flex-column-dos;
 }
 
 .img-depto{
@@ -62,33 +62,30 @@
 
 @media screen and (min-width: 768px){
     .galeria-dos{
-        width: 100%;
-        display: grid;
+        width: $ancho;
+        @include grid-tres;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,0.5fr);
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+        grid-template-rows: repeat(3,0.2fr);        
         margin: 0.2rem;
         padding: 0.5rem;
     }
 
     .imagen-uno{
         grid-column-start: span 2;
-        width: 100%;
+        width: $ancho;
       
     }
     
     .imagen-dos{
         width: 95%;        
     }
-        
+     
     .imagen-cuatro{
         grid-column-start: span 2;
-        width: 100%;
+        width: $ancho;
         
-    }   
-       
+    }    
+    
     .informacion{
         margin-top: 10px;
         display: grid;
@@ -131,13 +128,13 @@
 
     .imagen-uno{
         grid-column-start: span 1;
-        width: 100%;
+        width: $ancho;
       
     }
     
     .imagen-cuatro{
         grid-column-start: span 1;
-        width: 100%;
+        width: $ancho;
         
     }
     

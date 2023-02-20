@@ -1,25 +1,35 @@
 
+//import mixin
+@import "../utilidades/mixin";
+
 /*estilos sobrenosotros.html*/
 
 .main-nosotros{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    @include flex-column-tres;
     img{
-        height: 100%;
-        margin: 1rem;
-        padding: 1rem;
+        
+        margin: 0.5rem;
+        padding: 0.5rem;
     }
     p{
-        text-align: center;
+        text-align: justify;
         margin: 0.5rem;
+        padding: 0.5rem;
     }
     h2{
         text-align: center;
     }
     
+}
+
+@media screen and (min-width: 1024px) {
+    .main-nosotros{
+        display: grid;
+        grid-template-areas:  
+        "img-nos nos-uno"
+        "img-nos nos-uno";
+    }
 }
 /*fin de estilos sobrenosotros.html*/
 

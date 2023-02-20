@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+@mixin flex-column-tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+
 //mixin grid sin parametros
 
 @mixin grid{
@@ -29,4 +37,11 @@
     justify-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@mixin grid-tres{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }

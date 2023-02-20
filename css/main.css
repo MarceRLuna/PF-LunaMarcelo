@@ -97,7 +97,12 @@ footer {
     margin: 1rem; }
   .main-uno p {
     margin: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+    text-align: justify; }
+    .main-uno p span {
+      display: block; }
+    .main-uno p .span-text {
+      margin-top: 10px; }
 
 /*media querie index.html*/
 @media screen and (min-width: 1024px) {
@@ -121,8 +126,12 @@ footer {
       grid-area: p;
       margin: 0.5rem;
       padding: 0.5rem;
-      text-align: center;
-      font-size: 14px; } }
+      text-align: justify;
+      font-size: 14px; }
+      .main-uno p span {
+        display: block; }
+      .main-uno p .span-text {
+        margin-top: 10px; } }
 
 /*fin de estilos index.html*/
 /*estilos alquileres.html*/
@@ -265,11 +274,11 @@ footer {
   .galeria-dos {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 0.5fr);
-    justify-content: center;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.2fr);
     margin: 0.2rem;
     padding: 0.5rem; }
   .imagen-uno {
@@ -343,13 +352,18 @@ footer {
   justify-content: center;
   justify-items: center; }
   .main-nosotros img {
-    height: 100%;
-    margin: 1rem;
-    padding: 1rem; }
+    margin: 0.5rem;
+    padding: 0.5rem; }
   .main-nosotros p {
-    text-align: center;
-    margin: 0.5rem; }
+    text-align: justify;
+    margin: 0.5rem;
+    padding: 0.5rem; }
   .main-nosotros h2 {
     text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .main-nosotros {
+    display: grid;
+    grid-template-areas: "img-nos nos-uno" "img-nos nos-uno"; } }
 
 /*fin de estilos sobrenosotros.html*/

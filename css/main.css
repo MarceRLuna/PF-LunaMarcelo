@@ -170,11 +170,11 @@ footer {
     width: 100% !important;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
-    grid-template-rows: repeat(3, 0.5fr);
     justify-items: center;
     justify-content: center;
     text-align: center;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: repeat(3, 0.5fr);
     border: solid black 2px; }
   .galeria-item {
     position: relative; }
@@ -187,10 +187,7 @@ footer {
     position: absolute;
     left: 25px;
     bottom: 55px;
-    font-size: 17px; }
-  /*.galeria-item p{
-        font-size: 17px;
-    }*/ }
+    font-size: 17px; } }
 
 /*media querie alquileres.html*/
 @media screen and (min-width: 1024px) {
@@ -199,12 +196,8 @@ footer {
   .galeria-img {
     width: 100% !important;
     padding: 1rem;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
     border: solid black 3px; }
   .galeria-item {
     position: relative; }

@@ -2,6 +2,7 @@
 //importar variables, mixin
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 
 /*estilos alquileres.html*/
 
@@ -17,14 +18,9 @@
     @include flex-column-dos;       
 }
 
-.img-size{
-    width: 80%;
-    border: solid black 3px;
-    border-radius: 10px;
-    padding: 0.3rem;
-    margin: 0.5rem;
-    object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/
-    
+.img-size{    
+    @extend %borde;
+    object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/    
 }
 
 .galeria-item{

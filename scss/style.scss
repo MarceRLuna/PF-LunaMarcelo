@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 
-//importar variables
+//importar variables, extend
+
 @import "utilidades/variables";
+@import "utilidades/extend";
 
 /*estilos generales*/
 
@@ -82,8 +84,7 @@ footer{
                     width: 40px;
                     border-radius: 10px;
                     border: 1px solid black;
-                    margin: 1rem;
-                    
+                    margin: 1rem;                    
                 }
             }
             :hover{

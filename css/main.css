@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box; }
 
+.img-size {
+  width: 80%;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem; }
+
 /*estilos generales*/
 /*estilos body*/
 body {
@@ -134,6 +141,13 @@ footer {
         margin-top: 10px; } }
 
 /*fin de estilos index.html*/
+.img-size {
+  width: 80%;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem; }
+
 /*estilos alquileres.html*/
 /* estilos de main*/
 .alquileres {
@@ -149,11 +163,6 @@ footer {
   text-align: center; }
 
 .img-size {
-  width: 80%;
-  border: solid black 3px;
-  border-radius: 10px;
-  padding: 0.3rem;
-  margin: 0.5rem;
   object-fit: cover;
   /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/ }
 

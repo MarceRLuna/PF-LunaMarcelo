@@ -23,7 +23,7 @@ body {
   margin: 0.2rem; }
 
 .foto-logo {
-  width: 3rem; }
+  width: 2rem; }
 
 /*estilos para el boton del menu*/
 .navbar-toggler {
@@ -34,12 +34,15 @@ body {
 
 /* estilos de footer*/
 footer {
+  height: 60px;
   background-color: rgba(238, 195, 158, 0.801);
   display: flex;
   justify-content: center;
   /*alinea a los hijos horizontal*/
   align-items: center;
-  /*alinea a los hijos vertical*/ }
+  /*alinea a los hijos vertical*/
+  font-weight: bold;
+  padding-top: 0.5rem; }
   footer .redes-sociales {
     display: none; }
 
@@ -49,6 +52,8 @@ footer {
   .menu {
     display: flex;
     justify-content: center; }
+  .foto-logo {
+    width: 3rem; }
   .collapse {
     font-weight: bolder !important; }
   .nav-item:hover {
@@ -69,15 +74,11 @@ footer {
         border-radius: 10px;
         border: 1px solid black;
         margin: 1rem; }
-      footer .redes-sociales :hover {
+      footer .redes-sociales a :hover {
         filter: drop-shadow(0 0 5px #4d422b); } }
 
 /* fin de estilos generales*/
 /* estilos index.html*/
-.contenedor-uno {
-  height: 80%;
-  width: 100%; }
-
 .img-portada {
   height: 80%;
   width: 100%; }
@@ -86,7 +87,7 @@ footer {
   text-align: center;
   color: whitesmoke;
   background-color: brown;
-  font-size: 50px;
+  font-size: 35px;
   font-style: oblique;
   margin: 0.2rem;
   border: solid black 5px; }
@@ -95,6 +96,7 @@ footer {
 .main-uno {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center; }
   .main-uno img {
@@ -111,9 +113,11 @@ footer {
     .main-uno p .span-text {
       margin-top: 10px; }
 
-/*media querie index.html*/
+/*media querie pantallas desktop index.html*/
 @media screen and (min-width: 1024px) {
   /* estilos del index*/
+  .titulo-uno {
+    font-size: 50px; }
   .main-uno {
     width: 100%;
     display: grid;
@@ -121,24 +125,27 @@ footer {
     justify-items: center;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "img h2" "img p";
-    margin-bottom: 1rem; }
+    grid-template-areas: "img h2" "img p"; }
     .main-uno img {
+      padding-top: 0.1rem;
       grid-area: img;
       object-fit: cover; }
     .main-uno h2 {
       grid-area: h2;
-      margin-top: 10px; }
+      align-self: flex-end;
+      /*propiedad que permite alinear al hijo de manera independiente*/ }
     .main-uno p {
       grid-area: p;
       margin: 0.5rem;
       padding: 0.5rem;
       text-align: justify;
-      font-size: 14px; }
+      align-self: flex-start;
+      /*propiedad que permite alinear al hijo de manera independiente*/
+      font-size: 15px; }
       .main-uno p span {
         display: block; }
       .main-uno p .span-text {
-        margin-top: 10px; } }
+        margin-top: 20px; } }
 
 /*fin de estilos index.html*/
 .img-size {
@@ -179,7 +186,7 @@ footer {
   font-size: 15px;
   color: #fdfdfd !important; }
 
-/* estilos para pantallas de tablet*/
+/*estilos para pantallas de tablet*/
 @media screen and (min-width: 768px) {
   /*estilos para alquileres*/
   .alquileres {
@@ -207,7 +214,8 @@ footer {
     bottom: 55px;
     font-size: 17px; } }
 
-/*media querie alquileres.html*/
+/*fin estilos para pantallas de tablets*/
+/*estilos para pantallas desktop*/
 @media screen and (min-width: 1024px) {
   .alquileres {
     padding: 0.2rem; }
@@ -339,40 +347,67 @@ footer {
 
 /*fin de estilos propiedad-uno.html*/
 /*estilos contacto.html*/
-.maincontacto {
+.body-contacto {
+  display: flex;
+  flex-direction: column; }
+
+.main-contacto {
+  min-height: 75vh;
   text-align: center;
   padding-top: 10px;
   background-color: whitesmoke;
   margin: 15px 10px 10px 10px;
   font-size: 15px; }
 
-.maincontacto h2 {
+.main-contacto h2 {
   background-color: #c4c0c0;
   padding: 20px 20px 20px 20px;
   width: 90%;
   margin: 30px 0px 50px 50px; }
 
+.footer-contacto {
+  align-self: flex-end;
+  width: 100%; }
+
 /*fin de estilos contacto.html*/
 /*estilos sobrenosotros.html*/
 .main-nosotros {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center; }
   .main-nosotros img {
     margin: 0.5rem;
-    padding: 0.5rem; }
+    border-radius: 5px; }
   .main-nosotros p {
     text-align: justify;
-    margin: 0.5rem;
-    padding: 0.5rem; }
+    padding: 1.5rem; }
   .main-nosotros h2 {
     text-align: center; }
 
+/* estilos para pantallas de tablet*/
+@media screen and (min-width: 768px) {
+  .main-nosotros {
+    align-items: center; }
+    .main-nosotros div {
+      margin: 0 1rem 1rem 1rem;
+      background-color: whitesmoke;
+      border: solid #353232 1px; }
+    .main-nosotros img {
+      width: 96%;
+      border-radius: 5px; } }
+
+/* estilos para pantallas desktop*/
 @media screen and (min-width: 1024px) {
   .main-nosotros {
-    display: grid;
-    grid-template-areas: "img-nos nos-uno" "img-nos nos-uno"; } }
+    width: 90%;
+    min-height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    margin: auto; }
+    .main-nosotros div {
+      background-color: whitesmoke;
+      border: solid #353232 1px; } }
 
 /*fin de estilos sobrenosotros.html*/

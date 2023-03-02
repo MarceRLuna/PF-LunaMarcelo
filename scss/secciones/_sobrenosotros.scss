@@ -5,30 +5,54 @@
 /*estilos sobrenosotros.html*/
 
 .main-nosotros{
-    height: 100%;
+
     @include flex-column-tres;
-    img{
-        
+    img{                
         margin: 0.5rem;
-        padding: 0.5rem;
+        border-radius: 5px;        
     }
     p{
         text-align: justify;
-        margin: 0.5rem;
-        padding: 0.5rem;
+        padding: 1.5rem;
     }
     h2{
         text-align: center;
-    }
-    
+    }    
 }
 
-@media screen and (min-width: 1024px) {
+/* estilos para pantallas de tablet*/
+
+@media screen and (min-width: 768px){
+
     .main-nosotros{
-        display: grid;
-        grid-template-areas:  
-        "img-nos nos-uno"
-        "img-nos nos-uno";
+        align-items: center;
+        div{
+            margin: 0 1rem 1rem 1rem;
+            background-color: whitesmoke;
+            border: solid rgb(53, 50, 50) 1px;
+        }
+        img{
+            width: 96%;            
+            border-radius: 5px;
+        }
+    }
+}
+
+/* estilos para pantallas desktop*/
+
+@media screen and (min-width: 1024px) { 
+
+    .main-nosotros{
+        width: 90%;
+        min-height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 1rem;
+        margin: auto;
+        div{
+            background-color: whitesmoke;
+            border: solid rgb(53, 50, 50) 1px;
+        }
     }
 }
 /*fin de estilos sobrenosotros.html*/

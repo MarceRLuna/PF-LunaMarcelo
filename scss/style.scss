@@ -15,19 +15,18 @@
 
 /*estilos body*/
 body{
-    background-color: antiquewhite;
-    
+    background-color: antiquewhite;    
  }
-
+ 
  /*estilos para el menu de navegacion*/
 .menu{
    
     background-color: lightcoral;
     border: solid black 3px;
-    margin: 0.2rem;
+    margin: 0.2rem;    
 }
 .foto-logo{
-    width: 3rem;
+    width: 2rem;    
 }   
 
 /*estilos para el boton del menu*/
@@ -41,10 +40,13 @@ body{
 
 /* estilos de footer*/
 footer{
+    height: 60px;
     background-color: $color-footer;
     display: flex;
     justify-content: center; /*alinea a los hijos horizontal*/
     align-items: center; /*alinea a los hijos vertical*/
+    font-weight: bold;
+    padding-top: 0.5rem;
     .redes-sociales{
         display: none;
     }
@@ -58,6 +60,10 @@ footer{
     .menu{
         display: flex;
         justify-content: center; 
+    }
+
+    .foto-logo{
+        width: 3rem;    
     }
     .collapse{
         font-weight: bolder !important;
@@ -84,13 +90,13 @@ footer{
                     width: 40px;
                     border-radius: 10px;
                     border: 1px solid black;
-                    margin: 1rem;                    
+                    margin: 1rem;                                   
                 }
-            }
-            :hover{
-                filter: drop-shadow(0 0 5px rgb(77, 66, 43));
-            }
-        }
+                :hover{
+                        filter: drop-shadow(0 0 5px rgb(77, 66, 43));
+                    }   
+            }                        
+        }   
     }
 }
 /* fin de estilos generales*/

@@ -5,11 +5,6 @@
 
 /* estilos index.html*/
 
-.contenedor-uno{
-    height: 80%;
-    width: $ancho;       
-}
-
 .img-portada{
     height: 80%;
     width: $ancho;        
@@ -19,7 +14,7 @@
     text-align: center;
     color: whitesmoke;
     background-color: brown;
-    font-size: 50px;
+    font-size: 35px;
     font-style: oblique;
     margin: 0.2rem;
     border: solid black 5px;
@@ -48,12 +43,16 @@
     }    
 }    
 
-/*media querie index.html*/
+/*media querie pantallas desktop index.html*/
 
 @media screen and (min-width: 1024px) {
     
     /* estilos del index*/
-    
+
+    .titulo-uno{
+        font-size: 50px;
+    }
+
     .main-uno{
         width: $ancho;
         @include grid;
@@ -62,26 +61,28 @@
         grid-template-areas: 
         "img h2"
         "img p";
-        margin-bottom: 1rem;
+        
         img{
+            padding-top: 0.1rem;
             grid-area: img;
             object-fit: cover;        
         }
         h2{
-            grid-area: h2;
-            margin-top: 10px;
+            grid-area: h2;            
+            align-self:flex-end; /*propiedad que permite alinear al hijo de manera independiente*/            
         }
         p{
-            grid-area: p;
+            grid-area: p;            
             margin: 0.5rem;
             padding: 0.5rem;
             text-align:justify;
-            font-size: 14px;
+            align-self: flex-start; /*propiedad que permite alinear al hijo de manera independiente*/
+            font-size: 15px;
             span{
                 display:block;
             }
             .span-text{
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
     }

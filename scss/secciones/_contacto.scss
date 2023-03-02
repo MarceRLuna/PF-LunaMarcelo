@@ -1,7 +1,13 @@
 
 /*estilos contacto.html*/
 
-.maincontacto{
+.body-contacto{
+    display: flex;
+    flex-direction: column;    
+}
+
+.main-contacto{
+    min-height: 75vh;
     text-align: center;
     padding-top: 10px;
     background-color: whitesmoke;
@@ -10,11 +16,16 @@
     
 }
 
-.maincontacto h2{
+.main-contacto h2{
     background-color: rgb(196, 192, 192);
     padding: 20px 20px 20px 20px;
     width: 90%;
     margin: 30px 0px 50px 50px
+}
+
+.footer-contacto{
+    align-self: flex-end;
+    width: 100%;
 }
 
 /*fin de estilos contacto.html*/

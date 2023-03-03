@@ -47,8 +47,19 @@ footer{
     align-items: center; /*alinea a los hijos vertical*/
     font-weight: bold;
     padding-top: 0.5rem;
+    position: relative;
     .redes-sociales{
         display: none;
+    }
+    input{
+      position: absolute; 
+      right: 1.5%;      
+      bottom: 30%;
+      background-color: rgba(226, 152, 91, 0.801);
+      font-weight: bold;
+      padding: 3px;
+      border-radius: 15%;
+      font-size: 12px;  
     }
 }
 
@@ -96,7 +107,21 @@ footer{
                         filter: drop-shadow(0 0 5px rgb(77, 66, 43));
                     }   
             }                        
-        }   
+        }
+        a{
+            :hover{
+                filter: drop-shadow(0 0 5px rgb(77, 66, 43));
+            } 
+        }
+        input{
+            right: 1.5%;      
+            bottom: 20%;
+            background-color: rgba(226, 152, 91, 0.801);
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 25% 15%;
+            font-size: 12px;            
+        }     
     }
 }
 /* fin de estilos generales*/

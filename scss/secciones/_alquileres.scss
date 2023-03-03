@@ -15,30 +15,37 @@
 .galeria-img{
     width: $ancho;
     background: $color-grad;
-    @include flex-column-dos;       
-}
-
-.img-size{    
-    @extend %borde;
-    object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/    
+    @include flex-column-dos;
+          
 }
 
 .galeria-item{
-    position: relative;
+    position: relative;    
     p{
       font-size: 15px;
     }
 }
 
+.img-size{    
+    @extend %borde;
+    object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/ 
+        
+}
+
 .titulo-imagen{
     text-decoration: none !important;
     position: absolute;
-    left: 55px;
-    bottom: 55px;
+    left: 12%;
+    bottom: 20%;
+    /*left: 46px;
+    bottom: 54px;*/
     font-size: 15px;
-    color: rgb(253, 253, 253) !important;
-    
+    color: rgb(253, 253, 253);
+    background-color: rgb(182, 176, 168);
+    width: 76%;
+    border-radius: 3px;
 }
+
 
 /*estilos para pantallas de tablet*/
 
@@ -60,7 +67,6 @@
     }
 
     .galeria-item{
-        position: relative;
         p{
             font-size: 17px;
         }
@@ -71,10 +77,10 @@
     }
 
     .titulo-imagen{
-        position: absolute;
-        left: 25px;
-        bottom: 55px;
-        font-size: 17px;
+        left: 16px;
+        bottom: 57px;
+        font-size: 20px;
+        width: 92%;
     }  
 }
 
@@ -96,20 +102,15 @@
         border: solid black 3px;
     }
 
-    .galeria-item{
-        position: relative;
-    }
-    .img-size{
-        
+    .img-size{        
         width: 479px !important;
         height: 399px;
     }
 
     .titulo-imagen{
-        position: absolute;
-        left: 25px;
-        bottom: 55px;
-        
+        left: 15px;
+        bottom: 57px;
+        width: 94%;        
     }
 }
 /*fin de estilos alquileres.html*/

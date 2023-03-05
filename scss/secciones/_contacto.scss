@@ -13,6 +13,9 @@
     background-color: whitesmoke;
     margin: 15px 10px 10px 10px;
     font-size: 15px;
+    form{
+        /*width: 50%;*/
+    }
     
 }
 
@@ -21,6 +24,24 @@
     padding: 20px 20px 20px 20px;
     width: 90%;
     margin: 30px 0px 50px 50px
+}
+
+.botones{
+    display: flex;
+    margin: 0.5rem;
+    justify-content: center;
+    :hover{
+        filter: drop-shadow(0 0 5px rgb(37, 33, 23));
+    }
+    input{
+        padding: 0.5rem;
+        background-color: rgb(192, 153, 103);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-left: 1rem;         
+    }
 }
 
 .footer-contacto{

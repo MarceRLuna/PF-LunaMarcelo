@@ -63,25 +63,24 @@
 
     <main class="main-contacto">
 
-        <h2>COMPLETA CON TUS DATOS Y ENVIANOS TU CONSULTA</h2>
+        <h2>contacto</h2>
 
         <form>
             <fieldset>
 
-                <legend>Envia tus cometarios</legend>
-
                 <div>
-                    <label for="nombre">Completa tu nombre</label>
-                    <input type="text" name="nombre" placeholder="Coloca tu nombre nombre">
+                    <label for="nombre">Nombre</label>
+                    <input required type="text" name="nombre" placeholder="Coloca tu nombre nombre">
                 </div>
 
                 <div>
-                    <label for="mail">Completa tu email</label>
-                    <input type="email" name="mail" placeholder="Coloca tu dirección de mail">
+                    <label for="email">Completa tu email</label>
+                    <input required type="email" name="email" placeholder="Coloca tu dirección de mail">
                 </div>
 
                 <div>
-                    <textarea name="" id="" cols="100" rows="10">Consultas y/o sugerencias</textarea>
+                    <label for="message">Mensaje</label>
+                    <textarea required name="message" id="message" rows="6"></textarea>
                 </div>
 
             </fieldset>
@@ -92,6 +91,23 @@
                 <input type="reset" value="Borrar todo">
             </div>
           </form>
+
+          <nav class="social">
+            <ul class="social-list">
+              <li>
+                <a href="http://www.facebook.com" target="_blank" class="iconos-redes"><img src="../img/face.png" alt="icono de facebook"></a>                       
+              </li>
+              <li>
+                <a href="http://www.instagram.com" target="_blank" class="iconos-redes"><img src="../img/instagram.png" alt="icono de instagram"></a>
+              </li>
+              <li>
+                <a href="https://web.whatsapp.com/" target="_blank" class="iconos-redes"><img src="../img/WhatsApp.jpeg" alt="icono de whatsapp"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="iconos-redes"><img src="../img/twitter.png" alt="icono de twitter"></a>
+              </li>
+            </ul>
+          </nav>
 
     </main>
 

@@ -8,8 +8,8 @@
 .img-portada{
     height: 70%;
     width: $ancho;
-    border-radius: 10px;
-    padding: 1rem;        
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem 0 0.5rem;        
 }
 
 .titulo-uno{
@@ -27,10 +27,7 @@
 .main-uno{
     @include flex-column;
     img{
-        height: 90%;
-        width: $ancho; 
-        padding: 1rem;
-        margin: 1rem; 
+        display: none;        
     }
     p{
         margin: 1rem;
@@ -53,7 +50,7 @@
 
     .titulo-uno{
         font-size: 50px;
-    }
+    } 
 
     .main-uno{
         width: $ancho;
@@ -65,9 +62,15 @@
         "img p";
         
         img{
-            padding-top: 0.1rem;
+            display: grid;
+            /*padding-top: 0.1rem;*/
             grid-area: img;
-            object-fit: cover;        
+            object-fit: cover;
+            height: 90%;
+            width: $ancho; 
+            padding-left: 0.5rem;
+            margin: 1rem;
+                     
         }
         h2{
             grid-area: h2;            

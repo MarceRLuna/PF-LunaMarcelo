@@ -9,7 +9,8 @@
     height: 70%;
     width: $ancho;
     border-radius: 15px;
-    padding: 0.5rem 0.5rem 0 0.5rem;        
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-bottom: 0.5rem;        
 }
 
 .titulo-uno{
@@ -29,15 +30,19 @@
     img{
         display: none;        
     }
+    h2{
+        margin-top: 1rem;
+        padding: 0 0.6rem 0 0.6rem;
+    }
     p{
-        margin: 1rem;
+        margin: 0 1rem 1rem 1rem;
         padding: 1rem;
         text-align:justify;
         span{
             display:block;
         }
         .span-text{
-            margin-top: 10px;
+            margin-top: 15px;
         }
     }    
 }    

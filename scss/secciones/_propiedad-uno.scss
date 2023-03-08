@@ -1,0 +1,166 @@
+
+//import variables, mixin
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*estilos propiedad-uno.html*/
+
+.galeria-dos{
+    width: $ancho;
+    @include flex-column-dos;
+}
+
+.img-depto{
+    width: 95%;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    
+}
+
+.alquilertexto{
+    width: 100%;
+    h2{
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    p{
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgb(231, 235, 238);
+        font-size: 15px;
+        span{
+            display: block;
+            text-align: left;
+            padding-top: 10px;
+        }
+    }
+}
+
+.locatario{
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.alquilertextodos{
+    h3,h4{
+        text-align: center;}    
+    p{
+        margin: .5rem 1rem 1rem 1rem;
+        text-align: center;
+        span{
+            display: block;
+            padding-top: 10px;}
+    }iframe{
+        margin: 0 0 0.5rem 0.5rem;
+        width: 95%;
+        height: 300px;}
+}
+
+/* estilos para pantallas de tablet*/
+
+@media screen and (min-width: 768px){
+    .galeria-dos{
+        width: $ancho;
+        @include grid-tres;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,0.2fr);        
+        margin: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .imagen-uno{
+        grid-column-start: span 2;
+        width: $ancho;
+      
+    }
+    
+    .imagen-dos{
+        width: 95%;        
+    }
+     
+    .imagen-cuatro{
+        grid-column-start: span 2;
+        width: $ancho;
+        
+    }    
+    
+    .informacion{
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: 
+        "alquilertexto alquilertextodos";
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem 1rem 1rem;
+          
+    }
+    
+    .alquilertexto{        
+      grid-area: alquilertexto;
+      p{
+        font-size: 16px;}
+        h2{    
+            text-align: center;}
+    }
+
+    .alquilertextodos{
+        grid-area: alquilertextodos;
+        text-align: center;
+        h3{
+            margin-top: 0.6rem;}
+        iframe{
+            height: 59%;}
+    }
+}    
+/* fin de estilos para pantallas de tablets*/
+
+
+/*media querie para pantallas de escritorio*/
+
+@media screen and (min-width: 1024px){
+
+    .galeria-dos{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,0.5fr);
+        
+    }
+
+    .imagen-uno{
+        grid-column-start: span 1;
+        width: $ancho;
+      
+    }
+    
+    .imagen-cuatro{
+        grid-column-start: span 1;
+        width: $ancho;
+        
+    }
+    
+    .imagen-dos{
+        width: 99%;
+        height: 99%;
+        object-fit: cover;
+    }
+
+    .alquilertextodos iframe{
+        height: 53%;
+    }
+
+}    
+/*fin de estilos propiedad-uno.html*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

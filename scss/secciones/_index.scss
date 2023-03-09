@@ -68,7 +68,6 @@
         
         img{
             display: grid;
-            /*padding-top: 0.1rem;*/
             grid-area: img;
             object-fit: cover;
             height: 90%;
@@ -79,11 +78,12 @@
         }
         h2{
             grid-area: h2;            
-            align-self:flex-end; /*propiedad que permite alinear al hijo de manera independiente*/            
+            align-self:flex-start; /*propiedad que permite alinear al hijo de manera independiente*/
+                        
         }
         p{
             grid-area: p;            
-            margin: 0.5rem;
+            margin: 2rem;
             padding: 0.5rem;
             text-align:justify;
             align-self: flex-start; /*propiedad que permite alinear al hijo de manera independiente*/

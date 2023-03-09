@@ -20,11 +20,11 @@ body{
  
  /*estilos para el menu de navegacion*/
 .menu{
-   
-    background-color: lightcoral;
+    background-color: $color-menu;
     border: solid black 3px;
-    margin: 0.2rem;    
+    margin: 0.2rem;     
 }
+
 .foto-logo{
     width: 2rem;    
 }   
@@ -70,11 +70,20 @@ footer{
     /*estilos de menu*/
     .menu{
         display: flex;
-        justify-content: center; 
+        justify-content: center;
+        ul{
+            gap: 3rem;
+            li{
+                a{
+                   font-size: 17px; 
+                }
+            }
+        } 
     }
 
     .foto-logo{
-        width: 3rem;    
+        width: 3rem;
+        margin-right: 2rem;    
     }
     .collapse{
         font-weight: bolder !important;

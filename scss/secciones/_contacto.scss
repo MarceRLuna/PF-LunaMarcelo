@@ -32,16 +32,29 @@
             height: auto;
             resize: vertical; /*propiedad que permite que el tamaño varie de manera vertical solamente*/
         }
+        
     }   
 }
 
 .main-contacto h2{
     text-align: center;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 0 20px;
     margin: 30px;
     color: white;
     font-weight: bold;
+}
+
+.contato-detalles{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    gap: 20px;
+    .detalles-titulo{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
 }
 
 .botones{
@@ -69,13 +82,68 @@
     justify-content: center;
     margin-top: 1.5rem;
     img{
-      border-radius: 10px;  
+      border-radius: 10px;
+      height: 40px;
+      width: 40px;  
     }
 }
 
 .footer-contacto{
     align-self: flex-end;
     width: 100%;
+}
+
+/*media querie para pantallas de tablets*/
+
+@media screen and (min-width: 768px){
+
+    .main-contacto{
+        width: 680px;
+        margin: 1rem auto;
+    }
+
+}
+
+/* fin de estilos para pantallas de tablets*/
+
+/*media querie para pantallas de escritorio*/
+
+@media screen and (min-width: 1024px){
+
+    .social-list{
+        display: none;
+    }
+
+    .main-contacto{
+        width: 980px;        
+        display: grid;
+        grid-template-areas: 
+        "h2 form"
+        "contacto-detalles form";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        grid-area: h2;
+        align-self: self-end;
+    }
+
+    .contacto-detalles{
+        grid-area: contacto-detalles;
+        align-self: flex-start;
+        .detalles-texto{
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    form{
+        grid-area: form;
+    }
+    
 }
 
 /*fin de estilos contacto.html*/
